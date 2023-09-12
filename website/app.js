@@ -12,10 +12,12 @@ let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
 const fetch = require('node-fetch');
 const API_KEY = apiKey;
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
-const LAT = 39.099724;
-const LON = -94.578331;
+const ZIP =  "94040,us";
 
-const apiUrl = `${BASE_URL}?lat=${LAT}&lon=${LON}&appid=${API_KEY}`;
+// 
+
+
+const apiUrl = `${BASE_URL}?zip=${ZIP}&appid=${API_KEY}&units=metric`;
 
 async function fetchData() {
     try {
