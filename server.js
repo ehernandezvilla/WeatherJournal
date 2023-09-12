@@ -24,6 +24,17 @@ function listening(){
     console.log(`running on localhost: ${port}`);
 };
 
+// GET route /all example
+
+app.get('/all', sendData);
+
+function sendData (request, response){
+response.send('Welcome to the Weather Journal App Project!');
+};
+
+
+
+
 
 
 
