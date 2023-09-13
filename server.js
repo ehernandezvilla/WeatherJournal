@@ -24,6 +24,8 @@ function listening(){
     console.log(`running on localhost: ${port}`);
 };
 
+// All routes 
+
 // GET route /all example
 
 app.get('/all', sendData);
@@ -31,6 +33,29 @@ app.get('/all', sendData);
 function sendData (request, response){
 response.send('Welcome to the Weather Journal App Project!');
 };
+
+// POST route 
+
+weatherData = [];
+
+app.post('/weather', addWeather);
+
+function addWeather(req, res) {
+    const newEntry = {
+        temperature: req.body.temperature, // Openweather API
+        date: req.body.date, // Openweather API
+        feelings: req.body.feelings // Capture the feeling of the user 
+    }
+    weatherData.push(newEntry);
+    console.log(weatherData);
+    res.json({ success: true, message: "Data added successfully!", data: weatherData });
+}
+
+// GET route /weather
+
+app.get('/weather', (req, res) => {
+    res.json(weatherData);
+});
 
 
 
