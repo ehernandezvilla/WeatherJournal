@@ -1,4 +1,4 @@
-const apiKey = '747d607b1aec6f1e58d6c48b340f4289&units=metric';
+const apiKey = '<api_key>&units=metric';
 
 // Create a new date instance dynamically with JS
 let d = new Date();
