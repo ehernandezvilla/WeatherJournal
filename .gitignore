@@ -2,3 +2,4 @@ website/.env
 .env
 *.xlsx
 website/app_test.js
+/commentsOnlyJS
