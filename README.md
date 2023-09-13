@@ -43,3 +43,22 @@ This is the client-side script for the application. It handles:
 - Add more comprehensive error handling.
 - Enhance the UI/UX for a more engaging user experience.
 
+### `test.js`
+
+This file contains tests for the application's server-side logic. It uses the `jest` testing framework and `supertest` for testing HTTP assertions.
+
+## Testing
+
+To ensure the reliability and correctness of the application, tests have been written for the server-side logic. Here's a brief overview of the testing setup:
+
+- **Testing Framework**: [Jest](https://jestjs.io/), a popular JavaScript testing framework, is used to write and run the tests.
+  
+- **HTTP Testing**: [Supertest](https://www.npmjs.com/package/supertest) is used to simulate HTTP requests and test the server's responses.
+
+### Running the Tests
+
+To run the tests, use the following command:
+
+```bash
+npm test
+
